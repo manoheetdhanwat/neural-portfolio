@@ -335,9 +335,151 @@ export default function Home() {
         {/* ABOUT */}
         <section
           id="about"
-          className="min-h-screen flex items-center justify-center reveal"
+          className="min-h-screen flex items-center justify-center px-6 reveal"
         >
-          <SectionTitle text="About" />
+
+        <div
+        className="
+        relative
+        max-w-6xl
+        w-full
+        rounded-2xl
+        border border-white/10
+        bg-white/5
+        backdrop-blur-lg
+        p-10
+        grid
+        md:grid-cols-2
+        gap-10
+        shadow-[0_0_80px_rgba(120,120,255,0.15)]
+        "
+        >
+
+        {/* LEFT SIDE */}
+
+        <div>
+
+        <h2 className="text-3xl font-semibold mb-6">
+        About Me
+        </h2>
+
+        <p className="text-gray-400 leading-relaxed mb-8">
+        I’m Manoheet Dhanwat, an AI / Machine Learning engineer focused on
+        building intelligent systems and data-driven products.
+
+        My work combines machine learning, data engineering and
+        interactive web experiences to create scalable solutions.
+
+        I enjoy designing systems where data, models and user
+        experience work seamlessly together.
+        </p>
+
+        {/* STATS */}
+
+        <div className="grid grid-cols-3 gap-6 mt-10">
+
+        <div>
+        <p className="text-2xl font-semibold text-white">
+        3+
+        </p>
+        <p className="text-gray-400 text-sm">
+        AI / ML Projects
+        </p>
+        </div>
+
+        <div>
+        <p className="text-2xl font-semibold text-white">
+        2+
+        </p>
+        <p className="text-gray-400 text-sm">
+        Years Learning
+        </p>
+        </div>
+
+        <div>
+        <p className="text-2xl font-semibold text-white">
+        AI
+        </p>
+        <p className="text-gray-400 text-sm">
+        Focus Area
+        </p>
+        </div>
+
+        </div>
+
+        </div>
+
+        {/* RIGHT SIDE */}
+
+        {/* RIGHT SIDE */}
+
+        <div className="flex items-center justify-center relative">
+
+          {/* Glow behind card */}
+          <div className="
+            absolute
+            w-[300px]
+            h-[380px]
+            blur-3xl
+            opacity-1
+            bg-[conic-gradient(at_50%_50%,#ff00ff,#00ffff,#00ff88,#ffff00,#ff0080,#ff00ff)]
+            animate-[spin_12s_linear_infinite]
+          "></div>
+
+          {/* Card */}
+          <div
+            className="
+            about-card
+            group
+            relative
+            w-[260px]
+            h-[350px]
+            rounded-2xl
+            overflow-hidden
+            border border-white/10
+            shadow-[0_0_40px_rgba(120,120,255,0.25)]
+            transition-transform
+            duration-300
+            hover:scale-105
+            "
+          >
+
+            {/* Image */}
+            <img
+              src="/profile.jpeg"
+              alt="Manoheet"
+              className="
+              absolute inset-0
+              w-full
+              h-full
+              object-cover
+              object-[70%_center]
+              "
+            />
+border:1px solid rgba(255,255,255,0.2);
+              backdrop-filter:blur(10px);
+            {/* Dark Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+
+            {/* Text */}
+            <div className="absolute bottom-6 left-6 text-left">
+
+              <p className="text-lg font-semibold text-white">
+                Manoheet Dhanwat
+              </p>
+
+              <p className="text-sm text-gray-300">
+                AI / ML Engineer
+              </p>
+              
+
+        </div>
+
+        </div>
+
+        </div>
+
+        </div>
 
         </section>
 

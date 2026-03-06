@@ -62,3 +62,22 @@ section {
   transform: translateZ(0);
 }
 
+.profile-card{
+
+width:300px;
+height:400px;
+
+border-radius:22px;
+
+overflow:hidden;
+
+position:relative;
+
+/* add here */
+border:1px solid rgba(255,255,255,0.2);
+backdrop-filter:blur(10px);
+
+box-shadow:
+0 0 40px rgba(120,120,255,0.35);
+
+}
