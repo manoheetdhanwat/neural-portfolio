@@ -114,21 +114,19 @@ export default function TechStack() {
                 onClick={createRipple}
                 className="
                 group
-                h-16 w-16
-                sm:h-18 sm:w-18
-                lg:h-20 lg:w-20
+                h-20
+                w-20
                 rounded-xl
-                bg-black
+                bg-[#0f0f0f]
                 flex
                 items-center
                 justify-center
-                border border-black/50
-                shadow-[0_10px_18px_rgba(0,0,0,0.6)]
+                border border-white/10
+                shadow-[0_8px_20px_rgba(0,0,0,0.6)]
                 hover:scale-105
-                active:scale-[0.92]
-                active:shadow-[inset_0_6px_10px_rgba(0,0,0,0.8)]
+                hover:border-white/20
                 transition
-                duration-150
+                duration-200
                 relative
                 overflow-hidden
                 "

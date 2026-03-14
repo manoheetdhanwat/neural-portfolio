@@ -309,7 +309,7 @@ export default function Home() {
 
               {/* GitHub */}
               <a
-                href="https://github.com/"
+                href="https://github.com/manoheetdhanwat"
                 target="_blank"
                 className="p-2 rounded-md hover:bg-white/10 transition"
               >
@@ -318,7 +318,7 @@ export default function Home() {
 
               {/* LinkedIn */}
               <a
-                href="https://linkedin.com/"
+                href="https://www.linkedin.com/in/manoheetdhanwat/"
                 target="_blank"
                 className="p-2 rounded-md hover:bg-white/10 transition"
               >
@@ -456,8 +456,7 @@ export default function Home() {
               object-[70%_center]
               "
             />
-border:1px solid rgba(255,255,255,0.2);
-              backdrop-filter:blur(10px);
+
             {/* Dark Overlay */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
 
@@ -503,7 +502,7 @@ border:1px solid rgba(255,255,255,0.2);
                 title="EduAI Analytics"
                 description="Machine learning powered student performance prediction system."
                 image="/projects/eduai.png"
-                github="https://github.com/yourusername/eduai"
+                github="https://github.com/manoheetdhanwat/EduAI-Student-Performance-Prediction"
                 demo="#"
                 />
 
@@ -515,7 +514,7 @@ border:1px solid rgba(255,255,255,0.2);
                 title="HeartAI"
                 description="AI based heart disease prediction model with Flask backend."
                 image="/projects/heartai.png"
-                github="https://github.com/yourusername/eduai"
+                github="https://github.com/manoheetdhanwat/HeartAI"
                 demo="#"
               />
 
@@ -527,7 +526,7 @@ border:1px solid rgba(255,255,255,0.2);
                 title="Data Visualization Suite"
                 description="Interactive dashboards using Python, SQL and data pipelines."
                 image="/projects/dataviz.png"
-                github="https://github.com/yourusername/eduai"
+                github="https://github.com/manoheetdhanwat/forage-midas"
                 demo="#"
               />
 
@@ -565,7 +564,7 @@ border:1px solid rgba(255,255,255,0.2);
         </h2>
 
         <p className="text-gray-400 mb-8">
-          Please contact me directly at your@email.com or drop your info here.
+          Please contact me directly at manoheetdhanwat7@gmail.com or drop your info here.
         </p>
 
         <form
