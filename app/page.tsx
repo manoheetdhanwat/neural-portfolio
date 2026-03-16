@@ -8,7 +8,6 @@ import SmoothScroll from "@/components/SmoothScroll";
 import Navbar from "@/components/ui/Navbar";
 import TiltCard from "@/components/ui/TiltCard";
 import TechStack from "@/components/ui/TechStack";
-import ProjectCard from "@/components/ui/ProjectCard";
 import SectionTitle from "@/components/ui/SectionTitle";
 import Typed from "typed.js";
 import { Github, Linkedin, Twitter, Mail, FileText } from "lucide-react";
@@ -56,26 +55,26 @@ export default function Home() {
 
   useEffect(() => {
 
-  const typed = new Typed("#hero-roles", {
-    strings: [
-      "AI Engineer",
-      "Machine Learning Developer",
-      "Data Analyst",
-      "Intelligent Systems Builder"
-    ],
-    typeSpeed: 35,
-    backSpeed: 18,
-    backDelay: 2500,
-    startDelay: 800,
-    smartBackspace: true,
-    showCursor: true,
-    cursorChar: "|",
-    loop: true,
-  });
+    const typed = new Typed("#hero-roles", {
+      strings: [
+        "AI Engineer",
+        "Machine Learning Developer",
+        "Data Analyst",
+        "Intelligent Systems Builder"
+      ],
+      typeSpeed: 35,
+      backSpeed: 18,
+      backDelay: 2500,
+      startDelay: 800,
+      smartBackspace: true,
+      showCursor: true,
+      cursorChar: "|",
+      loop: true,
+    });
 
-  return () => typed.destroy();
+    return () => typed.destroy();
 
-}, []);
+  }, []);
 
   // Scroll animations
   useEffect(() => {
@@ -124,10 +123,6 @@ export default function Home() {
         );
 
       });
-         
-      <div className="absolute top-24 w-full">
-  <SectionTitle text="Projects" />
-</div>
 
       // Horizontal projects scroll
       if (projectsRef.current) {
@@ -140,7 +135,7 @@ export default function Home() {
           scrollTrigger: {
             trigger: "#projects",
             start: "top top",
-            end: () => "+=" + window.innerWidth * (panels - 1)* 0.5,
+            end: () => "+=" + window.innerWidth * (panels - 1) * 0.5,
             pin: true,
             scrub: 1,
           }
@@ -197,9 +192,9 @@ export default function Home() {
           id="home"
           className="relative h-screen flex flex-col items-center justify-center text-center px-6 overflow-hidden"
         >
-        {/* HERO GLOW BACKGROUND */}
-        <div
-          className="
+          {/* HERO GLOW BACKGROUND */}
+          <div
+            className="
           absolute
           w-[900px]
           h-[900px]
@@ -210,7 +205,7 @@ export default function Home() {
           blur-3xl
           pointer-events-none
           "
-        />
+          />
 
           <h1
             className="
@@ -277,8 +272,8 @@ export default function Home() {
 
 
             {/* SOCIAL BUTTON GROUP */}
-              <div
-                className="
+            <div
+              className="
                 flex flex-wrap justify-center gap-2
                 px-3 py-2
                 rounded-lg
@@ -287,7 +282,7 @@ export default function Home() {
                 backdrop-blur-md
                 w-full
                 "
-              >
+            >
 
               {/* Hire Me */}
               <a
@@ -338,8 +333,8 @@ export default function Home() {
           className="min-h-screen flex items-center justify-center px-6 reveal"
         >
 
-        <div
-        className="
+          <div
+            className="
         relative
         max-w-6xl
         w-full
@@ -353,70 +348,70 @@ export default function Home() {
         gap-10
         shadow-[0_0_80px_rgba(120,120,255,0.15)]
         "
-        >
+          >
 
-        {/* LEFT SIDE */}
+            {/* LEFT SIDE */}
 
-        <div>
+            <div>
 
-        <h2 className="text-3xl font-semibold mb-6">
-        About Me
-        </h2>
+              <h2 className="text-3xl font-semibold mb-6">
+                About Me
+              </h2>
 
-        <p className="text-gray-400 leading-relaxed mb-8">
-        I’m Manoheet Dhanwat, an AI / Machine Learning engineer focused on
-        building intelligent systems and data-driven products.
+              <p className="text-gray-400 leading-relaxed mb-8">
+                I’m Manoheet Dhanwat, an AI / Machine Learning engineer focused on
+                building intelligent systems and data-driven products.
 
-        My work combines machine learning, data engineering and
-        interactive web experiences to create scalable solutions.
+                My work combines machine learning, data engineering and
+                interactive web experiences to create scalable solutions.
 
-        I enjoy designing systems where data, models and user
-        experience work seamlessly together.
-        </p>
+                I enjoy designing systems where data, models and user
+                experience work seamlessly together.
+              </p>
 
-        {/* STATS */}
+              {/* STATS */}
 
-        <div className="grid grid-cols-3 gap-6 mt-10">
+              <div className="grid grid-cols-3 gap-6 mt-10">
 
-        <div>
-        <p className="text-2xl font-semibold text-white">
-        3+
-        </p>
-        <p className="text-gray-400 text-sm">
-        AI / ML Projects
-        </p>
-        </div>
+                <div>
+                  <p className="text-2xl font-semibold text-white">
+                    3+
+                  </p>
+                  <p className="text-gray-400 text-sm">
+                    AI / ML Projects
+                  </p>
+                </div>
 
-        <div>
-        <p className="text-2xl font-semibold text-white">
-        2+
-        </p>
-        <p className="text-gray-400 text-sm">
-        Years Learning
-        </p>
-        </div>
+                <div>
+                  <p className="text-2xl font-semibold text-white">
+                    2+
+                  </p>
+                  <p className="text-gray-400 text-sm">
+                    Years Learning
+                  </p>
+                </div>
 
-        <div>
-        <p className="text-2xl font-semibold text-white">
-        AI
-        </p>
-        <p className="text-gray-400 text-sm">
-        Focus Area
-        </p>
-        </div>
+                <div>
+                  <p className="text-2xl font-semibold text-white">
+                    AI
+                  </p>
+                  <p className="text-gray-400 text-sm">
+                    Focus Area
+                  </p>
+                </div>
 
-        </div>
+              </div>
 
-        </div>
+            </div>
 
-        {/* RIGHT SIDE */}
+            {/* RIGHT SIDE */}
 
-        {/* RIGHT SIDE */}
+            {/* RIGHT SIDE */}
 
-        <div className="flex items-center justify-center relative">
+            <div className="flex items-center justify-center relative">
 
-          {/* Glow behind card */}
-          <div className="
+              {/* Glow behind card */}
+              <div className="
             absolute
             w-[300px]
             h-[380px]
@@ -426,9 +421,9 @@ export default function Home() {
             animate-[spin_12s_linear_infinite]
           "></div>
 
-          {/* Card */}
-          <div
-            className="
+              {/* Card */}
+              <div
+                className="
             about-card
             group
             relative
@@ -442,99 +437,102 @@ export default function Home() {
             duration-300
             hover:scale-105
             "
-          >
+              >
 
-            {/* Image */}
-            <img
-              src="/profile.jpeg"
-              alt="Manoheet"
-              className="
+                {/* Image */}
+                <img
+                  src="/profile.jpeg"
+                  alt="Manoheet"
+                  className="
               absolute inset-0
               w-full
               h-full
               object-cover
               object-[70%_center]
               "
-            />
+                />
 
-            {/* Dark Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                {/* Dark Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
 
-            {/* Text */}
-            <div className="absolute bottom-6 left-6 text-left">
+                {/* Text */}
+                <div className="absolute bottom-6 left-6 text-left">
 
-              <p className="text-lg font-semibold text-white">
-                Manoheet Dhanwat
-              </p>
+                  <p className="text-lg font-semibold text-white">
+                    Manoheet Dhanwat
+                  </p>
 
-              <p className="text-sm text-gray-300">
-                AI / ML Engineer
-              </p>
-              
+                  <p className="text-sm text-gray-300">
+                    AI / ML Engineer
+                  </p>
 
-        </div>
 
-        </div>
+                </div>
 
-        </div>
+              </div>
 
-        </div>
+            </div>
+
+          </div>
 
         </section>
 
 
         {/* PROJECTS */}
         <section
-        id="projects"
-        className="relative h-[-300vh]"
-      >
+          id="projects"
+          className="relative min-h-screen"
+        >
 
-        <div className="sticky top-0 h-screen overflow-hidden">
+          <div className="h-screen w-full overflow-hidden">
+            <div className="absolute top-24 w-full z-10">
+              <SectionTitle text="Projects" />
+            </div>
 
-          <div
-            ref={projectsRef}
-            className="flex h-full items-center will-change-transform"
-          >
+            <div
+              ref={projectsRef}
+              className="flex h-full items-center will-change-transform"
+            >
 
-            <div className="w-screen flex items-center justify-center">
+              <div className="w-screen flex items-center justify-center">
 
-              <TiltCard
-                title="EduAI Analytics"
-                description="Machine learning powered student performance prediction system."
-                image="/projects/eduai.png"
-                github="https://github.com/manoheetdhanwat/EduAI-Student-Performance-Prediction"
-                demo="#"
+                <TiltCard
+                  title="EduAI Analytics"
+                  description="Machine learning powered student performance prediction system."
+                  image="/projects/eduai.png"
+                  github="https://github.com/manoheetdhanwat/EduAI-Student-Performance-Prediction"
+                  demo="#"
                 />
 
-            </div>
+              </div>
 
-            <div className="w-screen flex items-center justify-center">
+              <div className="w-screen flex items-center justify-center">
 
-              <TiltCard
-                title="HeartAI"
-                description="AI based heart disease prediction model with Flask backend."
-                image="/projects/heartai.png"
-                github="https://github.com/manoheetdhanwat/HeartAI"
-                demo="#"
-              />
+                <TiltCard
+                  title="HeartAI"
+                  description="AI based heart disease prediction model with Flask backend."
+                  image="/projects/heartai.png"
+                  github="https://github.com/manoheetdhanwat/HeartAI"
+                  demo="#"
+                />
 
-            </div>
+              </div>
 
-            <div className="w-screen flex items-center justify-center">
+              <div className="w-screen flex items-center justify-center">
 
-              <TiltCard
-                title="Data Visualization Suite"
-                description="Interactive dashboards using Python, SQL and data pipelines."
-                image="/projects/dataviz.png"
-                github="https://github.com/manoheetdhanwat/forage-midas"
-                demo="#"
-              />
+                <TiltCard
+                  title="Data Visualization Suite"
+                  description="Interactive dashboards using Python, SQL and data pipelines."
+                  image="/projects/dataviz.png"
+                  github="https://github.com/manoheetdhanwat/forage-midas"
+                  demo="#"
+                />
+
+              </div>
 
             </div>
 
           </div>
-
-        </div>
 
         </section>
 
@@ -559,51 +557,51 @@ export default function Home() {
 
           <div className="w-full max-w-xl mx-auto bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-6 sm:p-10">
 
-        <h2 className="text-3xl font-semibold mb-2">
-          Contact Form
-        </h2>
+            <h2 className="text-3xl font-semibold mb-2">
+              Contact Form
+            </h2>
 
-        <p className="text-gray-400 mb-8">
-          Please contact me directly at manoheetdhanwat7@gmail.com or drop your info here.
-        </p>
+            <p className="text-gray-400 mb-8">
+              Please contact me directly at manoheetdhanwat7@gmail.com or drop your info here.
+            </p>
 
-        <form
-          action="https://formspree.io/f/xaqpywqw"
-          method="POST"
-          className="space-y-6"
-        >
+            <form
+              action="https://formspree.io/f/xaqpywqw"
+              method="POST"
+              className="space-y-6"
+            >
 
-          {/* NAME + EMAIL */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {/* NAME + EMAIL */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
 
-            <input
-              type="text"
-              name="name"
-              placeholder="Your Name"
-              className="w-full bg-white/10 border border-white/10 rounded-md px-4 py-3 sm:py-4 outline-none focus:border-white/30"
-            />
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  className="w-full bg-white/10 border border-white/10 rounded-md px-4 py-3 sm:py-4 outline-none focus:border-white/30"
+                />
 
-            <input
-              type="email"
-              name="email"
-              placeholder="you@example.com"
-              className="w-full bg-white/10 border border-white/10 rounded-md px-4 py-3 sm:py-4 outline-none focus:border-white/30"
-            />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="you@example.com"
+                  className="w-full bg-white/10 border border-white/10 rounded-md px-4 py-3 sm:py-4 outline-none focus:border-white/30"
+                />
 
-          </div>
+              </div>
 
-          {/* MESSAGE */}
-          <textarea
-            name="message"
-            placeholder="Tell me about your project..."
-            rows={5}
-            className="w-full bg-white/10 border border-white/10 rounded-md px-4 py-3 sm:py-4 outline-none focus:border-white/30"
-          />
+              {/* MESSAGE */}
+              <textarea
+                name="message"
+                placeholder="Tell me about your project..."
+                rows={5}
+                className="w-full bg-white/10 border border-white/10 rounded-md px-4 py-3 sm:py-4 outline-none focus:border-white/30"
+              />
 
-          {/* SUBMIT */}
-          <button
-            type="submit"
-            className="
+              {/* SUBMIT */}
+              <button
+                type="submit"
+                className="
             w-full
             bg-white text-black
             py-3 rounded-md
@@ -611,18 +609,18 @@ export default function Home() {
             hover:bg-gray-200
             transition
             "
-          >
-            Send Message →
-          </button>
+              >
+                Send Message →
+              </button>
 
-        </form>
+            </form>
 
           </div>
 
         </section>
 
 
-              </main>
-            </>
-          );
-        }
+      </main>
+    </>
+  );
+}
